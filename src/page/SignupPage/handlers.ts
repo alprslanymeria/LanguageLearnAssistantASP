@@ -14,14 +14,15 @@ export async function handleSubmit(params: HandleSubmitProps) {
 
     e.preventDefault()
 
+    const formData = new FormData(e.currentTarget)
+
+    const email = formData.get("email") as string
+    const password = formData.get("password") as string
+    const nativeLanguageId = Number(formData.get("nativeLanguageId"))
+
     setLoading({ value: true, source: "SignupHandleSubmit" })
 
     try {
-
-        const form = e.currentTarget
-        const email = form.email.value as string
-        const password = form.password.value as string
-        const nativeLanguageId = Number(form.nativeLanguageId.value)
 
         // SIGN UP
         const signUpResult = await signUp({

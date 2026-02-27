@@ -163,3 +163,8 @@ __________________________
 if(kese.some(k => !k)) return  --> NORMAL KONTROL
 
 if(kese.some(k => k === null)) return --> ZUSTAND STORE PERSIST KONTROL
+
+NOT 7
+__________
+
+docker build -t alparslanorgnl/frontend:language-assistant-asp --target runner . && docker push alparslanorgnl/frontend:language-assistant-asp
