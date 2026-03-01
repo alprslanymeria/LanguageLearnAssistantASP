@@ -6,12 +6,12 @@ import { AUTH_COOKIES } from "@/src/infrastructure/auth/authTypes"
 
 
 // EXTERNALLY ACCESSIBLE URL OF THIS NEXT.JS APP
-const APP_URL = process.env.APP_URL
+const BASE_URL = process.env.BASE_URL
 
 
 export async function GET(request: NextRequest) {
 
-    const origin = APP_URL
+    const origin = BASE_URL
 
     try {
 

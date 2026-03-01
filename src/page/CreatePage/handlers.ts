@@ -9,9 +9,6 @@ import { GlobalStore } from "@/src/infrastructure/store/globalStore"
 import  socket  from "@/src/infrastructure/socket/socketClient"
 import { HttpStatusCode } from "@/src/infrastructure/common/HttpStatusCode"
 
-//BASE
-const BASE = process.env.NEXT_PUBLIC_BASE_URL
-
 
 export async function handleSvgClick(params : HandleSvgClickProps) {
 
@@ -82,7 +79,7 @@ export async function handleChoose(params : HandleChooseProps) {
             const safeUrl = encodeURIComponent(encryptedSessionId)
 
             //SESSION SAYFASINA YÖNLENDİR
-            router.push(`${BASE}/session?id=${safeUrl}`)
+            router.push(`/session?id=${safeUrl}`)
         })
 
         

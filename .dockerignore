@@ -6,3 +6,10 @@ README.md
 .next
 .git
 gcp-key.json
+.env*
+uploads
+CQRS.txt
+notes.txt
+steps.md
+LICENSE
+seedData.sql

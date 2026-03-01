@@ -1,7 +1,7 @@
 // IMPORTS
 import { NextResponse } from "next/server"
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL
+const BASE = process.env.BASE_URL
 
 const ROUTES = {
     protected: ["/create", "/session", "/language", "/practice", "/profile", "/detail", "/list", "/edit", "/add"],

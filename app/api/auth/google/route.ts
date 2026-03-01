@@ -6,13 +6,13 @@ import { NextRequest, NextResponse } from "next/server"
 const OAUTH_SERVER_PUBLIC_URL = process.env.OAUTH_SERVER_PUBLIC_URL
 
 // EXTERNALLY ACCESSIBLE URL OF THIS NEXT.JS APP
-const APP_URL = process.env.APP_URL
+const BASE_URL = process.env.BASE_URL
 
 
 export async function GET(request: NextRequest) {
 
-    // USE APP_URL IF SET, OTHERWISE DERIVE FROM REQUEST HEADERS
-    const origin = APP_URL
+    // USE BASE_URL IF SET, OTHERWISE DERIVE FROM REQUEST HEADERS
+    const origin = BASE_URL
     const callbackUrl = `${origin}/api/auth/google/callback`
 
     return NextResponse.redirect(
