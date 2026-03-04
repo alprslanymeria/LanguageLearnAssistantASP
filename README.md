@@ -2,7 +2,7 @@
 
 # 🌍 Language Learn Assistant
 
-**A full-stack, AI-powered language learning platform designed to help users master new languages through interactive flashcard sessions, reading comprehension, writing exercises, and listening practice.**
+**A full-stack, language learning platform designed to help users master new languages through interactive flashcard sessions, reading comprehension, writing exercises, and listening practice.**
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
@@ -53,7 +53,7 @@ The platform supports multiple target languages, keeps complete session history,
 - **Multi-language support** — Choose from multiple target languages via a flag-based home screen
 - **Four distinct practice modes** — Flashcard, Reading, Writing, and Listening
 - **Session history** — All completed sessions are saved and can be reviewed
-- **AI Translation** — Integrated Google Cloud Translate to provide instant translations during reading and writing sessions
+- **Translation** — Integrated Google Cloud Translate to provide instant translations during reading and writing sessions
 - **Real-time interaction** — Socket.IO integration enables real-time session features
 
 ### 🔐 Authentication & Security
@@ -141,18 +141,9 @@ src/
 | **React 19** | UI library |
 | **TypeScript 5** | Type safety |
 | **Tailwind CSS 4** + **DaisyUI 5** | Styling |
-| **Prisma 7** + **MSSQL** | Database ORM (used for auth tables) |
-| **Better Auth** | Authentication (Email/Password + Google OAuth) |
 | **Zustand** | Global state management |
 | **Socket.IO Client** | Real-time communication |
-| **Inversify** | IoC / Dependency injection |
-| **Zod** | Schema validation |
-| **OpenTelemetry** | Distributed tracing & metrics |
-| **Pino** | Structured logging |
-| **Google Cloud Translate** | AI translation |
-| **Google Cloud Storage** | File storage |
 | **bcryptjs** | Password hashing |
-| **sharp** / **node-vibrant** | Image processing |
 | **Lucide React** | Icon library |
 
 ### Backend
